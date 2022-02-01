@@ -15,7 +15,7 @@ No XAMPP:<br>
 Clone o diretório do GitHub na pasta htdocs.<br>
 Instale o composer no diretorio api_laravel <br>
 Baixe o arquivo .env em: https://drive.google.com/drive/u/0/folders/1bWQmFvDuxqSsGHzIYLg1Ful2vCpjd_kN <br>
-Cole no diretorio api_laravel (Caso não consiga baixar o .env, baixe o env.txt, renomeie para ".env" e cole no mesmo diretório). <br>
+Cole no diretorio api_laravel como ".env" sem aspas. (caso não consiga baixar o .env, baixe o env.txt, renomeie para ".env" e cole no mesmo diretório). <br>
 No terminal, inicie o servidor Laravel (certifique-se que a api esteja rodando na porta 8000).<br>
 Inicie o servidor Apache no XAMPP.<br>
 Agora com o servidor rodando, basta abrir sua URL local/comics. 
