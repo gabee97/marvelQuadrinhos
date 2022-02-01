@@ -1,0 +1,174 @@
+/* HEADER */
+.logo-image{
+  width: 100px;
+}
+
+/* FOOTER */
+
+section {
+  padding: 60px 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-area {
+border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+font-size: 15px;
+margin: 30px 0 60px;
+position: relative;
+}
+
+.contact-content p::after {
+background: #353C46;
+bottom: -30px;
+content: "";
+height: 1px;
+left: 50%;
+position: absolute;
+transform: translate(-50%);
+width: 80%;
+}
+
+.contact-content h6 {
+color: #8b9199;
+font-size: 15px;
+font-weight: 400;
+margin-bottom: 10px;
+}
+
+.contact-content span {
+color: #353c47;
+margin: 0 10px;
+}
+
+.contact-social {
+margin-top: 30px;
+}
+
+.contact-social > ul {
+display: inline-flex;
+}
+
+.contact-social ul li a {
+color: #8b9199;
+display: inline-block;
+height: 40px;
+margin: 0 10px;
+padding-top: 7px;
+transition: all 0.4s ease 0s;
+width: 40px;
+font-size: 40px;
+}
+
+.contact-social ul li a:hover {
+color: #2b2a2a;
+}
+
+.contact-content img {
+max-width: 210px;
+}
+
+section, footer {
+background: #f8f9fa;
+color: black;
+}
+
+footer p {
+padding: 40px 0;
+text-align: center;
+}
+
+footer img {
+width: 44px;
+}
+
+/* PAGE */
+.comics_box {
+  padding: 4px;
+  border: 1px solid #e7e6e6;
+}
+.comics_box p{
+  text-align: center;
+}
+p.box_title {
+  font-size: 22px;
+  font-weight: 500;
+}
+p.box_price {
+  margin-bottom: 50px;
+}
+.comics_box button{
+  width: 49%;
+  bottom: 0;
+  position: absolute;
+}
+button.box_btn_cart {
+  right: 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.see_more {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* MODALS */
+.loading {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #ccc;
+  border-right-color: #f92929;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+#loader_modal .modal-content{
+  border: none;
+  background-color: #fff0;
+}
+#loader_modal .modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+@media(max-width: 768px) {
+  #loader_modal .modal-dialog{
+    min-height: calc(100vh - 20px);
+  }
+}
+.comics_modal_box{
+  padding: 5px;
+}
+p.comics_title {
+  text-align: center;
+}
+img#comic_image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}

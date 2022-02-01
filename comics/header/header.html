@@ -1,0 +1,68 @@
+<!-- Header doccument -->
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- Set Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+            <img id="header_image" width="30" height="30" class="d-inline-block align-top logo-image" alt="">
+            Comics
+            </a>
+        </nav>
+        <!-- Set Categories -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Avengers
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" id="Black%20Panther"onclick="getCharacterByName(this.id)">Black Panther</a>
+                <a class="dropdown-item" id="Black%20Widow"onclick="getCharacterByName(this.id)">Black Widow</a>
+                <a class="dropdown-item" id="Captain%20America"onclick="getCharacterByName(this.id)">Captain America</a>
+                <a class="dropdown-item" id="Doctor%20Strange"onclick="getCharacterByName(this.id)">Doctor Strange</a>
+                <a class="dropdown-item" id="Falcon"onclick="getCharacterByName(this.id)">Falcon</a>
+                <a class="dropdown-item" id="Hulk"onclick="getCharacterByName(this.id)">Hulk</a>
+                <a class="dropdown-item" id="Iron%20Man"onclick="getCharacterByName(this.id)">Iron Man</a>
+                <a class="dropdown-item" id="Loki"onclick="getCharacterByName(this.id)">Loki</a>
+                <a class="dropdown-item" id="Nick%20Fury"onclick="getCharacterByName(this.id)">Nick Fury</a>
+                <a class="dropdown-item" id="Thor"onclick="getCharacterByName(this.id)">Thor</a>
+                <a class="dropdown-item" id="Vision"onclick="getCharacterByName(this.id)">Vision</a>
+                <a class="dropdown-item" id="Wasp"onclick="getCharacterByName(this.id)">Wasp</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                X-Men
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" id="Beast"onclick="getCharacterByName(this.id)">Beast</a>
+                <a class="dropdown-item" id="Cyclops"onclick="getCharacterByName(this.id)">Cyclops</a>
+                <a class="dropdown-item" id="Iceman"onclick="getCharacterByName(this.id)">Iceman</a>
+                <a class="dropdown-item" id="Magneto"onclick="getCharacterByName(this.id)">Magneto</a>
+                <a class="dropdown-item" id="Professor%20X"onclick="getCharacterByName(this.id)">Professor X</a>
+                <a class="dropdown-item" id="Rogue"onclick="getCharacterByName(this.id)">Rogue</a>
+                <a class="dropdown-item" id="Wolverine"onclick="getCharacterByName(this.id)">Wolverine</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Set Search bar and button -->
+          <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchByName" placeholder="Search Character">
+            <button class="btn btn-outline-danger my-2 my-sm-0" onclick="getCharacterName()">Search</button>
+          </div>
+        </div>
+      </nav>
+</body>
+
+</html>
+
+<script>
+  // Trigger enter click in search
+  $("#searchByName").keypress(function(event) {
+      if (event.keyCode === 13) {
+          getCharacterName();
+      }
+  });
+</script>
